@@ -11,6 +11,7 @@ namespace AspNetCoreWebApiApp01.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [ApiConventionType(typeof(DefaultApiConventions))]
     public class TodoItemsController : ControllerBase
     {
         private readonly TodoContext _context;
